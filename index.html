@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07101f"><title>Fantasy Draft Assistant</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div><small>2026 DRAFT ASSISTANT</small><h1>Fantasy Football Draft Assistant</h1><p>12-Team • Half-PPR • Yahoo</p></div><button id="reset">Reset</button></header>
+<main>
+<section class="card setup"><h2>Draft Setup</h2><div class="grid">
+<label>Draft position<select id="slot"><option value="">Choose 1–12</option></select></label>
+<label>League<input value="12 teams • 0.5 PPR" disabled></label>
+<label>Draft<input value="Aug 23, 2026 • 3:30 PM PT" disabled></label>
+</div><p>Enter your Yahoo draft slot when it is revealed. The recommendation engine will adapt to your roster and available players.</p></section>
+
+<section class="two">
+<section class="card"><div class="title"><b>YOU'RE ON THE CLOCK</b><span id="slotLabel">Set draft position</span></div><div id="rec" class="rec empty">Choose your draft position to activate the assistant.</div></section>
+<section class="card"><div class="title"><b>MY ROSTER</b><span id="count">0 / 15</span></div><div id="roster"></div></section>
+</section>
+
+<section class="card"><div class="title"><b>BEST AVAILABLE</b><div id="filters"></div></div><div id="players"></div></section>
+<section class="card"><div class="title"><b>DRAFTED</b><span id="dc">0</span></div><div id="drafted"></div></section>
+</main>
+<footer>Starter build. Player data should be refreshed with current 2026 projections, ADP, injuries and news before draft day.</footer>
+<script src="app.js"></script>
+</body></html>
